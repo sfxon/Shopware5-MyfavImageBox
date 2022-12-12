@@ -1,0 +1,95 @@
+.myfavimagebox {
+    position: relative;
+}
+
+.myfavimagebox .box-text-container {
+    margin: 0 auto;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+.myfavimagebox .box-text {
+    font-weight: 700;
+    font-size: .8rem;
+    margin: 0 auto;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+
+@media screen and(min-width: 500px) {
+    .myfavimagebox .box-text {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .myfavimageboxcontainer .myfav-full-banner-image {
+        width: 100%!important;
+    }
+}
+
+/*
+@media screen and(min-width: @tabletViewportWidth) {
+    .myfavimagebox .box-text {
+        font-size: 2em;
+    }
+}*/
+
+.myfavimagebox .box-text-container {
+    bottom: 1.5rem;
+    left: .5rem;
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+    .myfavimagebox .box-text {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        padding: 4px 12px;
+        text-align: center;
+        text-transform: uppercase;
+        width: auto;
+        bottom: 3rem;
+        left: 2rem;
+    }
+
+    .myfav-emotion-container {
+        margin-left: 0!important;
+    }
+}
+
+.myfav-special-box-container {
+    padding-left: 0!important;
+}
+
+/* White borders around the images */
+.myfav-emotion-container .myfav-full-banner-image:first-child {
+    padding-left: 24px!important;
+    padding-right: 12px!important;
+}
+
+.myfav-emotion-container .myfav-full-banner-image:not(:first-child) {
+    padding-right: 24px;
+    padding-left: 12px!important;
+}
+
+.myfav-full-banner-image {
+    margin-bottom: 24px;
+}
+
+.myfav-emotion-container .myfav-full-banner-image {
+    padding-top: 24px!important;
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+    .myfav-emotion-container .myfav-full-banner-image:first-child {
+        padding-left: 0!important;
+    }
+
+    .myfav-emotion-container .myfav-full-banner-image:not(:first-child) {
+        padding-right: 0!important;
+    }
+}
